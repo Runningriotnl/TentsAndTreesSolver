@@ -1,0 +1,54 @@
+/**************************
+The grid for the tents
+**************************/
+.container {
+	margin: 7% auto;
+	float:center;
+    position: center;
+    width: 30%;
+    padding-bottom: 30%;
+}
+
+.square {
+    float:left;
+    position: relative;
+    width: 19.5%;
+    padding-bottom: 19.5%; /* = width for a 4:4; aspect ratio */
+    
+    overflow:hidden;
+    border:1px solid black;;
+}
+
+.no_border_square_top {
+	float:left;
+    position: relative;
+    width: 19.5%;
+    padding-bottom: 19.5%; /* = width for a 4:4; aspect ratio */
+    
+    overflow:hidden;
+
+}
+
+.no_border_square_front {
+	float:left;
+    position: relative;
+    width: 19.5%;
+    padding-bottom: 19.5%; /* = width for a 4:4; aspect ratio */
+    
+    overflow:hidden;
+
+}
+
+.content {
+    position:absolute;
+    height:80%; /* = 100% - 2*10% padding */
+    width:90%; /* = 100% - 2*5% padding */
+    padding: 10% 5%;
+}
+
+.numTents {
+	position:absolute;
+    height:80%; /* = 100% - 2*10% padding */
+    width:90%; /* = 100% - 2*5% padding */
+    padding: 10% 5%;
+}
