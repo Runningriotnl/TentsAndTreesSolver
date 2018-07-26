@@ -79,3 +79,7 @@ The grid for the tents
     line-height: 90px;
     text-align: center;
 }
+
+.grass {
+    background-color: green;
+}
