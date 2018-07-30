@@ -55,9 +55,9 @@ The grid for the tents
 
 .content {
     position:absolute;
-    height:80%; /* = 100% - 2*10% padding */
-    width:90%; /* = 100% - 2*5% padding */
-    padding: 10% 5%;
+    height:100%; /* = 100% - 2*10% padding */
+    width:100%; /* = 100% - 2*5% padding */
+    /*padding: 10% 5%; */
 }
 
 .numTents {
@@ -82,4 +82,14 @@ The grid for the tents
 
 .grass {
     background-color: green;
+}
+
+
+/******************************
+The tents and trees pictures
+******************************/
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
