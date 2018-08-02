@@ -13,8 +13,8 @@ inputElements.createGrid.addEventListener('click', e => {
 	const gridLength = parseInt(inputElements.inputLength.value);
 	console.log(width);
 	inputElements.gridContainer.innerHTML = '';
-	for(var i = 0; i < gridLength; i++){
-		for(var j = 0; j < gridWidth; j++){
+	for(var i = 0; i < gridLength+1; i++){
+		for(var j = 0; j < gridWidth+1; j++){
 			if(j === 0 && i === 0){
 				inputElements.gridContainer.insertAdjacentHTML('beforeend',
 				`<div class="no_border_square_top">
@@ -45,7 +45,13 @@ inputElements.createGrid.addEventListener('click', e => {
        						</p>
     					</div>
     				</div>`);
-    		}
+    		} else {
+          inputElements.gridContainer.insertAdjacentHTML('beforeend',
+            `<div class="square">
+              <div class="content">
+              </div>
+            </div>`);
+        }
 
 
 		}
