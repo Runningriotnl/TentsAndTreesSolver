@@ -12,12 +12,16 @@ inputElements.createGrid.addEventListener('click', e => {
 	const gridWidth = parseInt(inputElements.inputWidth.value);
 	const gridLength = parseInt(inputElements.inputLength.value);
 	console.log(width);
+  const squareSize = (90 / gridWidth);
+  console.log(squareSize);
+
 	inputElements.gridContainer.innerHTML = '';
 	for(var i = 0; i < gridLength+1; i++){
 		for(var j = 0; j < gridWidth+1; j++){
 			if(j === 0 && i === 0){
 				inputElements.gridContainer.insertAdjacentHTML('beforeend',
-				`<div class="no_border_square_top">
+				`<div class="no_border_square_top" width="${squareSize}%"
+    padding-bottom="${squareSize}%">
     				<div class="corner">
     				</div>
     			</div>`);
