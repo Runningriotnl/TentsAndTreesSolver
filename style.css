@@ -26,7 +26,7 @@ The grid for the tents
 .square {
     float:left;
     position: relative;
-    width: 19.5%;
+ /*   width: 19.5%;
     padding-bottom: 19.5%; /* = width for a 4:4; aspect ratio */
     
     overflow:hidden;
@@ -36,7 +36,7 @@ The grid for the tents
 .no_border_square_top {
 	float:left;
     position: relative;
-    width: 19.5%;
+ /*   width: 19.5%;
     padding-bottom: 19.5%; /* = width for a 4:4; aspect ratio */
     
     overflow:hidden;
@@ -46,7 +46,7 @@ The grid for the tents
 .no_border_square_front {
 	float:left;
     position: relative;
-    width: 19.5%;
+/*    width: 19.5%;
     padding-bottom: 19.5%; /* = width for a 4:4; aspect ratio */
     
     overflow:hidden;

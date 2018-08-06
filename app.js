@@ -12,7 +12,7 @@ inputElements.createGrid.addEventListener('click', e => {
 	const gridWidth = parseInt(inputElements.inputWidth.value);
 	const gridLength = parseInt(inputElements.inputLength.value);
 	console.log(width);
-  const squareSize = (90 / gridWidth);
+  const squareSize = (70 / gridWidth);
   console.log(squareSize);
 
 	inputElements.gridContainer.innerHTML = '';
@@ -20,14 +20,15 @@ inputElements.createGrid.addEventListener('click', e => {
 		for(var j = 0; j < gridWidth+1; j++){
 			if(j === 0 && i === 0){
 				inputElements.gridContainer.insertAdjacentHTML('beforeend',
-				`<div class="no_border_square_top" width="${squareSize}%"
-    padding-bottom="${squareSize}%">
+				`<div class="no_border_square_top" style="width:${squareSize}%;
+    padding-bottom:${squareSize}%">
     				<div class="corner">
     				</div>
     			</div>`);
     		} else if(i === 0){
     			inputElements.gridContainer.insertAdjacentHTML('beforeend',
-    			`<div class="no_border_square_top">
+    			`<div class="no_border_square_top" style="width:${squareSize}%;
+    padding-bottom:${squareSize}%">
     				<div class="numTents">
     					<p class="top_num_tents" ><input type="number"
        						min="0"
@@ -39,7 +40,8 @@ inputElements.createGrid.addEventListener('click', e => {
     			</div>`);
     		} else if(j === 0 && i !== 0){
     			inputElements.gridContainer.insertAdjacentHTML('beforeend',
-    				`<div class="no_border_square_front">
+    				`<div class="no_border_square_front" style="width:${squareSize}%;
+    padding-bottom:${squareSize}%">
     					<div class="numTents">
     						<p class="front_num_tents"><input type="number"
        							min="0"
@@ -51,7 +53,8 @@ inputElements.createGrid.addEventListener('click', e => {
     				</div>`);
     		} else {
           inputElements.gridContainer.insertAdjacentHTML('beforeend',
-            `<div class="square">
+            `<div class="square" style="width:${squareSize}%;
+    padding-bottom:${squareSize}%">
               <div class="content">
               </div>
             </div>`);
