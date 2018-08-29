@@ -12,7 +12,7 @@ inputElements.createGrid.addEventListener('click', e => {
 	const gridWidth = parseInt(inputElements.inputWidth.value);
 	const gridLength = parseInt(inputElements.inputLength.value);
 	console.log(width);
-  const squareSize = (90 / (gridWidth + 1));
+  const squareSize = (97.5 / (gridWidth + 1));
   console.log(squareSize);
 
 	inputElements.gridContainer.innerHTML = '';
@@ -32,7 +32,7 @@ inputElements.createGrid.addEventListener('click', e => {
             `<div class="no_border_square_front" style="width:${squareSize}%;
               padding-bottom:${squareSize}%">
               <div class="numTents">
-                <p class="front_num_tents"><input  style="width:80%;" type="number"
+                <p class="front_num_tents"><input type="number"
                     min="0"
                     max="2"
                     step="1"
@@ -46,7 +46,7 @@ inputElements.createGrid.addEventListener('click', e => {
     			`<div class="no_border_square_top" style="width:${squareSize}%;
             padding-bottom:${squareSize}%">
     				<div class="numTents">
-    					<p class="top_num_tents" ><input  style="width:80%;" type="number"
+    					<p class="top_num_tents" ><input type="number"
        						min="0"
        						max="2"
        						step="1"
